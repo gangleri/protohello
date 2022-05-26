@@ -1,0 +1,11 @@
+syntax = "proto3";
+package hello;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "/stubs";
+
+message Person {
+    string name = 1;
+    string email = 3;
+}
