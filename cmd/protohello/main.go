@@ -3,14 +3,14 @@ package main
 import (
 	"fmt"
 
-	"github.com/gangleri/protohello/stubs"
 	"google.golang.org/protobuf/proto"
+
+	"github.com/gangleri/protohello/stubs"
 )
 
 func main() {
 	p := &stubs.Person{
-		Name:  "John Doe",
-		Email: "j.doe@gmail.com",
+		Name: "John Doe",
 	}
 
 	o, _ := proto.Marshal(p)
